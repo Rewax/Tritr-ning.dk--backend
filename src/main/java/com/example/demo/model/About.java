@@ -13,7 +13,6 @@ public class About {
     private String description;
     private String img;
 
-
     @JsonBackReference
     @OneToOne(mappedBy = "about", fetch = FetchType.LAZY)
     private ImageTable imageTable;
